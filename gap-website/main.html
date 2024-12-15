@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gap - 1990s Style</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", sans-serif;
+            background-color: #ffebcd;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffa07a;
+            border-bottom: 3px solid #ff4500;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #ff4500;
+            font-family: "Curlz MT", cursive;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background-color: #ffdead;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 2px dashed #ffa500;
+        }
+
+        nav a {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #8b0000;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ff4500;
+        }
+
+        .banner {
+            background-color: #ffdab9;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .banner video {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border: 3px dotted #ff4500;
+        }
+
+        .section {
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 10px;
+            border: 2px solid #ffa500;
+            background-color: #fffacd;
+            border-radius: 15px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            color: #8b0000;
+            text-align: center;
+            text-shadow: 1px 1px #ffa07a;
+        }
+
+        .section .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            width: 180px;
+            text-align: center;
+            border: 2px dashed #ff4500;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px #ffa07a;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 3/4;
+            object-fit: contain;
+            border: 2px solid #ffa500;
+            border-radius: 5px;
+        }
+
+        .newsletter {
+            background-color: #ffdead;
+            text-align: center;
+            padding: 30px;
+            border: 2px dotted #ffa500;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        .newsletter h3 {
+            color: #ff4500;
+            text-shadow: 1px 1px #ffa07a;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            margin-right: 10px;
+            border: 2px solid #ffa500;
+            border-radius: 5px;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .newsletter button:hover {
+            background-color: #ff6347;
+        }
+
+        footer {
+            background-color: #ffa07a;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-top: 3px solid #ff4500;
+        }
+
+        footer p {
+            font-family: "Comic Sans MS", cursive;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gap</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Collections</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">Lifestyle</a>
+        <a href="#">About</a>
+    </nav>
+
+    <div class="banner">
+        <video autoplay loop playsinline>
+            <source src="gap-commercial.mp4" type="video/mp4">
+            <source src="your-video.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <audio autoplay loop>
+            <source src="your-audio.mp3" type="audio/mp3">
+            <source src="your-audio.ogg" type="audio/ogg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <div class="section">
+        <h2>Payday Deals</h2>
+        <div class="grid">
+            <div class="product">
+                <img src="sweatpants.jpeg" alt="Product">
+                <p>Green Bay Sweatpants - $10.00</p>
+            </div>
+            <div class="product">
+                <img src="sweater.jpg" alt="Product">
+                <p>Rainbow Sweater - $13.00</p>
+            </div>
+            <div class="product">
+                <img src="cardigan.jpg" alt="Product">
+                <p>New York Cardigan - $70.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Top Collections</h2>
+        <div class="grid">
+            <div>
+                <p><a href="#">Winter Collection</a></p>
+            </div>
+            <div>
+                <p><a href="#">Summer Looks</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="newsletter">
+        <h3>Sign up for our newsletter</h3>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Gap 1990s &copy; 2023</p>
+    </footer>
+</body>
+</html>
